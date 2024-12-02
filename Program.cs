@@ -10,9 +10,9 @@ namespace MyCompany.MyApp
         {
             App app = new App();
             MainStack stack = new MainStack(app, "aws_instance");
-            new RemoteBackend(
+            new CloudBackend(
                 stack,
-                new RemoteBackendProps
+                new CloudBackendConfig
                 {
                     Hostname = "app.terraform.io",
                     Organization = "Athlone_Institute",
